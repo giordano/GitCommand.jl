@@ -3,8 +3,8 @@ os:
   - osx
   - windows
 arch:
-  - x86
-  - x64
+  - i386
+  - amd64
 
 julia:
   - 1.3
