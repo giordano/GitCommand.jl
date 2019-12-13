@@ -1,9 +1,9 @@
-os:
-  - linux
-  - osx
-arch:
-  - x64
-  - x86
+# os:
+#   - linux
+#   - osx
+# arch:
+#   - x64
+#   - x86
 
 branches:
   only:
