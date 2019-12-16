@@ -10,4 +10,4 @@ steps:
 - name: build
   image: julia:1.3
   commands:
-  - "julia --project=. --check-bounds=yes --color=yes -e 'using InteractiveUtils; versioninfo(verbose=true); using Pkg; Pkg.build(); Pkg.test(coverage=true)'"
+  - "LD_LIBRARY_PATH=/root/.julia/artifacts/5731e94570453ac7af61cbf2aea57b173289992a/lib:/usr/local/julia/bin/../lib/julia:/usr/local/julia/bin/../lib:/root/.julia/artifacts/f2ef98b4f23c9b3dec27d9c65218d83b31c0f9c5/lib:/root/.julia/artifacts/f0ee7f38d6526ee8475e1b84c3ed07ca9e71e4bd/lib:/root/.julia/artifacts/de06a38721d786ea7f9c538a9c87bd74538d3379/lib:/root/.julia/artifacts/5731e94570453ac7af61cbf2aea57b173289992a/lib:/root/.julia/artifacts/493b16bf903d68f94c9e4b36cff78f78597c9486/lib:/root/.julia/artifacts/bf5fd7fdcf7835632854ebc88e122932f54a496a/lib:/root/.julia/artifacts/ef21e36f1552e19de9424b67b99df6039956668b/lib:/root/.julia/artifacts/0902aae0c24857936e9fc764f38eeef60a015a3d/lib:/root/.julia/artifacts/1a090d30fdab42f9f90ea1cc6de3bcfb2a1b672b/lib /root/.julia/artifacts/5c156c7cf88f4716683ae8b8abd9bea46b92d193/bin/git clone https://github.com/JuliaRegistries/General"
