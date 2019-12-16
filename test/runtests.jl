@@ -22,6 +22,7 @@ end
         @test !isdir("General")
         @test !isfile(joinpath("General", "Registry.toml"))
         git() do git
+            @show ENV["LD_LIBRARY_PATH"]
             run(`$git clone https://github.com/JuliaRegistries/General`)
         end
         @test isdir("General")
